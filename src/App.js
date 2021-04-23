@@ -1,23 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
-
+import MapPractice from './components/MapPractice'
+import FilterPractice from './components/FilterPractise'
+import Mycomponent from './components/Mycomponent'
+import { PP } from './components/PP'
+import { FunctionalComponent } from './components/FunctionalComponent'
+import ClassComp from './components/ClassComp'
 function App() {
+const userName="Fakhra"
+const myFunction =()=>{return "React class 3"}
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <FunctionalComponent userName={userName}/>
+      <ClassComp numberOfParticipants="12" myFunction={myFunction}/>
+   
     </div>
   );
 }
